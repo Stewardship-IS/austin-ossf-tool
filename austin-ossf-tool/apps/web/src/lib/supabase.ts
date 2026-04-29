@@ -7,7 +7,7 @@ export const createBrowserClient = () => {
   return createClient(supabaseUrl, supabaseAnonKey);
 };
 
-export { createClient };
+export const createClient = createBrowserClient;
 
 export type Json =
   | string
