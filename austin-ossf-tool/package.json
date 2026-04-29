@@ -1,0 +1,15 @@
+{
+  "name": "austin-ossf-tool",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "packages/adapters"
+  ],
+  "scripts": {
+    "dev:web": "echo 'Initialize Next.js app in apps/web'",
+    "dev:worker": "echo 'Initialize worker in apps/worker'",
+    "db:push": "echo 'Run Supabase migrations'",
+    "lint": "echo 'Add eslint after app bootstrap'"
+  }
+}
