@@ -1,17 +1,19 @@
 {
-  "name": "ossf-worker",
-  "version": "1.0.0",
+  "name": "worker",
+  "private": true,
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "dev": "tsx src/index.ts",
+    "start": "node --import tsx src/index.ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.39.0",
-    "node-cron": "^3.0.3",
-    "cheerio": "^1.0.0-rc.12",
-    "node-fetch": "^3.3.2"
+    "@supabase/supabase-js": "2.49.8"
   },
-    "engines": { "node": ">=20.0.0" }
+  "devDependencies": {
+    "tsx": "4.19.3",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
 }
